@@ -26,7 +26,7 @@ Watch sass, html, and js. Launches a browser via browser sync that reloads when 
 
 ### npm run watch-*
 
-There are watch scripts that use the `watch` node module to watch various types of assets. One for sass, one for js, one for jade.
+There are watch scripts that use the watch options of the tools involved. These are pretty much leveraged by the dev task.
 
 ### npm run build
 
