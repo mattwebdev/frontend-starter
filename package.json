@@ -12,8 +12,8 @@
     "build": "npm run clean && npm run sass && npm run jade && npm run webpack && npm run images",
     "webpack": "webpack --config webpack.config.js",
     "sync": "browser-sync start --server dist --index index.html --files 'dist/*.css, dist/*.html, dist/*.js' --port 4000",
-    "watch-sass": "watch 'npm run sass' scss",
-    "watch-js": "watch 'npm run webpack' src",
+    "watch-sass": "node-sass --include-path scss/bourbon --output-style compressed scss/style.scss dist/style.css --w scss",
+    "watch-js": "webpack --config webpack.config.js --watch",
     "watch-jade": "jade -wP pages --out dist",
     "dev": "npm run watch-sass & npm run watch-jade & npm run watch-js & npm run sync"
   },
@@ -30,7 +30,6 @@
     "jest-cli": "^0.8.2",
     "json-loader": "^0.5.4",
     "node-sass": "^3.4.2",
-    "watch": "^0.16.0",
     "webpack": "^1.12.9"
   }
 }
