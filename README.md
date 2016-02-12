@@ -13,10 +13,9 @@ This project includes some npm scripts that leverage bash and a handful of node 
 ```
 dist/ - everything is built to here
 images/ - images
-scripts/ - supporting build scripts
 scss/ - SASS things
 src/ - JS things
-index.html - a single html page
+pages/ - pages of your site/app as jade files
 ```
 
 ## scripts
@@ -27,7 +26,7 @@ Watch sass, html, and js. Launches a browser via browser sync that reloads when 
 
 ### npm run watch-*
 
-There are watch scripts that use the `watch` node module to watch various types of assets. One for sass, one for js, one for html.
+There are watch scripts that use the `watch` node module to watch various types of assets. One for sass, one for js, one for jade.
 
 ### npm run build
 
