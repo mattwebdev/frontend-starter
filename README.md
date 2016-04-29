@@ -20,7 +20,7 @@ pages/ - pages of your site/app as jade files
 
 ## scripts
 
-### npm run dev
+### npm start
 
 Watch sass, html, and js. Launches a browser via browser sync that reloads when changes happen to these things. Pretty much the only script you need.
 
